@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp16">
+
+    <ImageView
+        android:id="@+id/imgCustom"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp150"
+        android:scaleType="centerCrop"
+        android:src="@drawable/devils_men" />
+
+    <TextView
+        android:id="@+id/txtCustomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/imgCustom"
+        android:layout_toRightOf="@id/imgCustom"
+        android:paddingLeft="@dimen/dp8"
+        android:text="@string/devils_men"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/txtCustomDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCustomTitle"
+        android:layout_alignBottom="@id/imgCustom"
+        android:layout_toEndOf="@id/imgCustom"
+        android:layout_toRightOf="@id/imgCustom"
+        android:paddingLeft="@dimen/dp16"
+        android:text="@string/devils_men_desc"
+        android:textSize="@dimen/sp12"></TextView>
+</RelativeLayout>
