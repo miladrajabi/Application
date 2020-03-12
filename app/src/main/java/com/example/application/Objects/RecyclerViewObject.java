@@ -1,19 +1,28 @@
 package com.example.application.Objects;
 
-public class RecyclerViewObject {
+import java.io.Serializable;
 
-    private String singerName, songName;
-    int like, view, comment;
+public class RecyclerViewObject implements Serializable {
 
-    public RecyclerViewObject(String singerName, String songName, int like, int view, int comment) {
-        this.singerName = singerName;
-        this.songName = songName;
-        this.like = like;
-        this.view = view;
-        this.comment = comment;
-    }
+    private String singerName;
+    private String songName;
+    private String songDate;
+    private int songLike;
+    private int songView;
+    private int songComment;
+    private int songImage;
 
     public RecyclerViewObject() {
+    }
+
+    public RecyclerViewObject(String singerName, String songName, String songDate, int songLike, int songView, int songComment, int songImage) {
+        this.singerName = singerName;
+        this.songName = songName;
+        this.songDate = songDate;
+        this.songLike = songLike;
+        this.songView = songView;
+        this.songComment = songComment;
+        this.songImage = songImage;
     }
 
     public String getSingerName() {
@@ -32,27 +41,43 @@ public class RecyclerViewObject {
         this.songName = songName;
     }
 
-    public int getLike() {
-        return like;
+    public String getSongDate() {
+        return songDate;
     }
 
-    public void setLike(int like) {
-        this.like = like;
+    public void setSongDate(String songDate) {
+        this.songDate = songDate;
     }
 
-    public int getView() {
-        return view;
+    public int getSongLike() {
+        return songLike;
     }
 
-    public void setView(int view) {
-        this.view = view;
+    public void setSongLike(int songLike) {
+        this.songLike = songLike;
     }
 
-    public int getComment() {
-        return comment;
+    public int getSongView() {
+        return songView;
     }
 
-    public void setComment(int comment) {
-        this.comment = comment;
+    public void setSongView(int songView) {
+        this.songView = songView;
+    }
+
+    public int getSongComment() {
+        return songComment;
+    }
+
+    public void setSongComment(int songComment) {
+        this.songComment = songComment;
+    }
+
+    public int getSongImage() {
+        return songImage;
+    }
+
+    public void setSongImage(int songImage) {
+        this.songImage = songImage;
     }
 }

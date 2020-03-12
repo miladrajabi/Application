@@ -15,4 +15,16 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp16"
+        android:onClick="onClick"
+        android:tint="@color/White"
+        app:srcCompat="@drawable/ic_grid_on_black_24dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
 </RelativeLayout>
