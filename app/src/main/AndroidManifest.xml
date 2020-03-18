@@ -10,13 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Episods.ImageViewItemActivity"></activity>
-        <activity android:name=".Episods.RecyclerViewActivity">
+        <activity android:name=".Episods.TabwidgetActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Episods.ImageViewItemActivity" />
+        <activity android:name=".Episods.RecyclerViewActivity">
+
         </activity>
         <activity android:name=".Episods.CustomGridViewActivity" />
         <activity android:name=".Episods.MainActivity" />
