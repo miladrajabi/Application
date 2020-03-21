@@ -60,4 +60,13 @@
 
     <!-- RCL -->
 
+    <!-- StartPermission -->
+    <string name="checkPermission">Check Permission</string>
+    <string name="permissionGranted">Permission Granted</string>
+    <string name="permissionDenied">Permission Denied</string>
+
+
+    <!-- EndPermission -->
+
+
 </resources>
