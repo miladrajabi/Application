@@ -10,4 +10,9 @@
     <color name="chatSendColor">#2A417E</color>
     <color name="LightGray">#969696</color>
     <color name="Seprator">#448a8a8c</color>
+    <color name="color1">#d50000</color>
+    <color name="color2">#d500f9</color>
+    <color name="color3">#ff3d00</color>
+    <color name="chatBackground">#CCCCCC</color>
+    <color name="telegramColor">#0088cc</color>
 </resources>
