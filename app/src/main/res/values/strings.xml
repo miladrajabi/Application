@@ -64,9 +64,12 @@
     <string name="checkPermission">Check Permission</string>
     <string name="permissionGranted">Permission Granted</string>
     <string name="permissionDenied">Permission Denied</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
 
 
     <!-- EndPermission -->
 
+    <string name="clr">#448a8a8c</string>
 
 </resources>
