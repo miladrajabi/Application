@@ -9,4 +9,6 @@
     <dimen name="sp20">20sp</dimen>
     <dimen name="sp16">16sp</dimen>
     <dimen name="dp4">4dp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="dp24">24dp</dimen>
 </resources>

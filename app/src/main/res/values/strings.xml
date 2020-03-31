@@ -65,6 +65,7 @@
     <string name="permissionGranted">Permission Granted</string>
     <string name="permissionDenied">Permission Denied</string>
     <string name="title">Title</string>
+    <string name="farsiTitle">عنوان</string>
     <string name="message">Message</string>
 
 

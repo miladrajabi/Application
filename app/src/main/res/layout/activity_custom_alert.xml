@@ -158,6 +158,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="true"></androidx.appcompat.widget.AppCompatCheckBox>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_marginTop="@dimen/dp8">
+
+            <TextView
+                android:id="@+id/txtInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/chkInput"
+                android:text="Input?" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/chkInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"></androidx.appcompat.widget.AppCompatCheckBox>
 
         </RelativeLayout>

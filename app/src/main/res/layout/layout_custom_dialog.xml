@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/chatBG">
+
+    <View
+        android:id="@+id/vwColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp4"
+        android:background="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vwColor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/dp16">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgTitleIcon"
+            android:layout_width="@dimen/dp24"
+            android:layout_height="@dimen/dp24"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_contacts_black_24dp"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/txtTlt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp8"
+            android:layout_toLeftOf="@id/imgTitleIcon"
+            android:gravity="right"
+            android:text="@string/farsiTitle"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/vwSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtTlt"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16"
+            android:background="@color/separator" />
+
+        <TextView
+            android:id="@+id/txvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vwSeparator"
+            android:gravity="right"
+            android:lineSpacingExtra="10dp"
+            android:minHeight="50dp"
+            android:text="@string/sample"
+            android:textSize="20sp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/acetInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txvMessage"
+            android:hint="@string/sample"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/acetInput"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:id="@+id/lnrParentNegative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acetInput"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toLeftOf="@id/lnrParentPositive"
+                android:background="@color/colorAccent"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:id="@+id/lnrNegative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp8">
+
+                    <TextView
+                        android:id="@+id/tvNegative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_marginRight="@dimen/dp8"
+                        android:gravity="center_vertical"
+                        android:text="Negative" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/icnNegative"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        app:srcCompat="@drawable/ic_done_black_24dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrParentPositive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@color/colorAccent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/lnrPositive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp8">
+
+                    <TextView
+                        android:id="@+id/tvPositive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_marginRight="@dimen/dp8"
+                        android:gravity="center_vertical"
+                        android:text="Positive" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/icnPositive"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        app:srcCompat="@drawable/ic_done_black_24dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/lnrParentNeutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/acetInput"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@color/colorAccent"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:id="@+id/lnrNeutral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp8">
+
+                <TextView
+                    android:id="@+id/tvNeutral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:gravity="center_vertical"
+                    android:text="Neutral" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icnNeutral"
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    app:srcCompat="@drawable/ic_done_black_24dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
